@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Distance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="claculation-distance pt-4 vh-100">
+      <div class="container">
+        <h1>Calculate Location Distance</h1>
+        <p>
+          Enter coordinates to compare the distance from your current location
+        </p>
+        <form id="coordinateForm">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="mb-3">
+                <label for="latitude" class="form-label">Latitude</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="latitude"
+                  name="latitude"
+                  step="any"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="mb-4">
+                <label for="longitude" class="form-label">longitude</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="longitude"
+                  name="longitude"
+                  step="any"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button type="submit" class="btn btn-primary w-100 p-2 mb-3">
+                Calculate Distance
+              </button>
+            </div>
+          </div>
+        </form>
+        <p id="result" class="text-center fs-5"></p>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
